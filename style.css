@@ -27,3 +27,68 @@ nav a {
 nav a:hover {
     color: #0077ff;
 }
+/* Layout container for project cards */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Individual project card */
+.project-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Project card title */
+.project-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* List of features */
+.project-card ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Button row */
+.project-buttons {
+    margin-top: 15px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    border: 1px solid #0077ff;
+    background: #0077ff;
+    color: #ffffff;
+}
+
+/* Secondary button style */
+.btn.secondary {
+    background: #ffffff;
+    color: #0077ff;
+}
+
+/* Disabled state */
+.btn.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Make layout nicer on bigger screens */
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
