@@ -92,3 +92,65 @@ nav a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+/* Main page layout */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Hero section on the home page */
+.hero {
+    margin-top: 40px;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 650px;
+}
+
+/* Hero buttons */
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+/* Primary button style */
+.primary-btn {
+    background: #0077ff;
+    color: #ffffff;
+    border: 1px solid #0077ff;
+}
+
+/* Secondary button style */
+.secondary-btn {
+    background: #ffffff;
+    color: #0077ff;
+    border: 1px solid #0077ff;
+}
+
+/* About page layout */
+.about h1 {
+    margin-bottom: 15px;
+}
+
+.about p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
